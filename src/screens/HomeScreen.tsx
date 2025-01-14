@@ -14,7 +14,7 @@ export const HomeScreen = () => {
 
   return (
     <ScrollView style={styles.container}>
-      <Search searchText={searchText} previousSearches={previousSearches} setSearchText={setSearchText} />
+      <Search searchText={searchText} setSearchText={setSearchText} />
       <HomeButtons 
         setArticles={setArticles} 
         setSearchText={setSearchText} 

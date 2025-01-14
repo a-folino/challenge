@@ -1,5 +1,5 @@
 import React from 'react'
-import { Pressable, StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, View } from 'react-native'
 import { fetchNewsResults } from '../api/news';
 import { PreviousSearchItem } from './PreviousSearchItem';
 
@@ -18,7 +18,6 @@ export const PreviousSearches = ({ searches, setPreviousSearches, previousSearch
 
     // only storing first 5 articles
     setArticles(response.slice(0, 5));
-    console.log(response);
   };
 
   const handleDelete = (index: number) => {
